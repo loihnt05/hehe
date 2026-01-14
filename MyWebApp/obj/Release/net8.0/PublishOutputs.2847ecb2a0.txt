@@ -1,0 +1,7 @@
+/home/loiancut/workspace/MyWebApp/publish-fd/MyWebApp
+/home/loiancut/workspace/MyWebApp/publish-fd/appsettings.Development.json
+/home/loiancut/workspace/MyWebApp/publish-fd/appsettings.json
+/home/loiancut/workspace/MyWebApp/publish-fd/MyWebApp.dll
+/home/loiancut/workspace/MyWebApp/publish-fd/MyWebApp.deps.json
+/home/loiancut/workspace/MyWebApp/publish-fd/MyWebApp.runtimeconfig.json
+/home/loiancut/workspace/MyWebApp/publish-fd/MyWebApp.pdb
