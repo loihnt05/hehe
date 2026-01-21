@@ -4,7 +4,8 @@ using MyWebApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<IWelcomeService, WelcomeService>();
-
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.Use(async (context, next) =>
@@ -12,6 +13,12 @@ app.Use(async (context, next) =>
     Console.WriteLine($"{context.Request.Method} {context.Request.Path} {context.Response.StatusCode}");
     await next(); 
 });
+
+app.UseSwagger();
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwaggerUI();
+}
 
 app.UseRewriter(new RewriteOptions().AddRedirect("history", "about"));
 

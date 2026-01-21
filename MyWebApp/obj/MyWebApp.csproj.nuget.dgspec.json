@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/loiancut/workspace/MyWebApp/MyWebApp.csproj": {}
+    "/home/loiancut/workspace/net/MyWebApp/MyWebApp.csproj": {}
   },
   "projects": {
-    "/home/loiancut/workspace/MyWebApp/MyWebApp.csproj": {
+    "/home/loiancut/workspace/net/MyWebApp/MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/loiancut/workspace/MyWebApp/MyWebApp.csproj",
+        "projectUniqueName": "/home/loiancut/workspace/net/MyWebApp/MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "/home/loiancut/workspace/MyWebApp/MyWebApp.csproj",
+        "projectPath": "/home/loiancut/workspace/net/MyWebApp/MyWebApp.csproj",
         "packagesPath": "/home/loiancut/.nuget/packages/",
-        "outputPath": "/home/loiancut/workspace/MyWebApp/obj/",
+        "outputPath": "/home/loiancut/workspace/net/MyWebApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/loiancut/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
